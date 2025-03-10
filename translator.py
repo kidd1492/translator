@@ -13,6 +13,7 @@ def main():
     again(language, engine)
 
 
+#init the TTS object engine 
 def configure_engine():
     """Configure and return the TTS engine."""
     engine = pyttsx3.init()
@@ -25,10 +26,8 @@ def configure_engine():
 def select_language():
     """Prompt the user to select a language by name and return the language code."""
     supported_languages = {
-        "spanish": "es", "french": "fr", "german": "de",
-        "arabic": "ar", "italian": "it", "japanese": "ja",
-        "russian": "ru", "chinese": "zh", "korean": "ko"
-    }
+        "spanish": "es", "french": "fr", "german": "de", "italian": "it"
+         }
 
     while True:
         print("Supported Languages:")
